@@ -4,50 +4,140 @@ import java.util.*;
 public class Main {
   public static class Node {
     int data;
-    Node next;
-  }
+    Node left;
+    Node right;
 
-  public static class LinkedList {
-    Node head;
-    Node tail;
-    int size;
-
-    void addLast(int val) {
-  Node node = new Node();
-  node.data = val;
-  if(this.size==0){
-      head = tail=node;
-  }else{
-      tail.next = node;
-      tail = node;
-  }
-  this.size++;
+    Node(int data, Node left, Node right) {
+      this.data = data;
+      this.left = left;
+      this.right = right;
     }
   }
 
-  public static void testList(LinkedList list) {
-    for (Node temp = list.head; temp != null; temp = temp.next) {
-      System.out.println(temp.data);
-    }
-    System.out.println(list.size);
+  public static class Pair {
+    Node node;
+    int state;
 
-    if (list.size > 0) {
-      System.out.println(list.tail.data);
-    } 
+    Pair(Node node, int state) {
+      this.node = node;
+      this.state = state;
+    }
   }
+
+  public static Node construct(Integer[] arr) {
+    Node root = new Node(arr[0], null, null);
+    Pair rtp = new Pair(root, 1);
+
+    Stack<Pair> st = new Stack<>();
+    st.push(rtp);
+
+    int idx = 0;
+    while (st.size() > 0) {
+      Pair top = st.peek();
+      if (top.state == 1) {
+        idx++;
+        if (arr[idx] != null) {
+          top.node.left = new Node(arr[idx], null, null);
+          Pair lp = new Pair(top.node.left, 1);
+          st.push(lp);
+        } else {
+          top.node.left = null;
+        }
+
+        top.state++;
+      } else if (top.state == 2) {
+        idx++;
+        if (arr[idx] != null) {
+          top.node.right = new Node(arr[idx], null, null);
+          Pair rp = new Pair(top.node.right, 1);
+          st.push(rp);
+        } else {
+          top.node.right = null;
+        }
+
+        top.state++;
+      } else {
+        st.pop();
+      }
+    }
+
+    return root;
+  }
+
+  public static void display(Node node) {
+    if (node == null) {
+      return;
+    }
+
+    String str = "";
+    str += node.left == null ? "." : node.left.data + "";
+    str += " <- " + node.data + " -> ";
+    str += node.right == null ? "." : node.right.data + "";
+    System.out.println(str);
+
+    display(node.left);
+    display(node.right);
+  }
+
+  public static int size(Node node) {
+      if(node ==null){
+          return 0;
+      }
+    int le = size(node.left);
+    int ri = size(node.right);
+    return ri+le+1;
+  }
+
+  public static int sum(Node node) {
+      if(node==null){
+          return 0;
+      }
+    int mxle = sum(node.left);
+    int mxri = sum(node.right);
+    return mxle+mxri+node.data;
+  }
+
+  public static int max(Node node) {
+    if(node == null){
+        return 0;
+    }
+        int le = max(node.left);
+    int ri = max(node.right);
+    return Math.max(Math.max(le,ri),node.data);
+  }
+
+  public static int height(Node node) {
+      if(node == null){
+        return -1;
+    }
+    int le = height(node.left);
+    int ri = height(node.right);
+    return Math.max(le,ri)+1;
+  }
+
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    LinkedList list = new LinkedList();
-
-    String str = br.readLine();
-    while(str.equals("quit") == false){
-      if(str.startsWith("addLast")){
-        int val = Integer.parseInt(str.split(" ")[1]);
-        list.addLast(val);
-      } 
-      str = br.readLine();
+    int n = Integer.parseInt(br.readLine());
+    Integer[] arr = new Integer[n];
+    String[] values = br.readLine().split(" ");
+    for (int i = 0; i < n; i++) {
+      if (values[i].equals("n") == false) {
+        arr[i] = Integer.parseInt(values[i]);
+      } else {
+        arr[i] = null;
+      }
     }
 
-    testList(list);
+    Node root = construct(arr);
+
+    int size = size(root);
+    int sum = sum(root);
+    int max = max(root);
+    int ht = height(root);
+    System.out.println(size);
+    System.out.println(sum);
+    System.out.println(max);
+    System.out.println(ht);
   }
+
 }
