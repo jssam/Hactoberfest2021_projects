@@ -48,6 +48,13 @@ It can be any of any length and can be any number of scripts, just **add a folde
 ## Contributors
 
 - sanyam jain
+- Anubhav 
+- Rahul kumar singh
+- ritvik singh
+- rahul das
+- alen kuriakose
+
+##Hactoberfest
 <b>What is Hacktoberfest?</b>
 <p>A month-long celebration from October 1st - 31st sponsored by Digital Ocean and GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.</p>
 
