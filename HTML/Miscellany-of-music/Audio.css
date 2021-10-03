@@ -1,0 +1,89 @@
+*{
+    padding: 10px;
+    margin: 3px;
+}
+body  {
+    background-image: url("im.webp");
+    background-color: #3e0f42;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+.topnav a {
+  float:right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: serif ;
+}
+
+.topnav a:hover {
+  background-color: rgb(173, 24, 153);
+  color: rgb(0, 0, 0);
+}
+
+.topnav a.active {
+  background-color: #af4c8e;
+  color: rgb(255, 255, 255);
+}
+
+.name{
+    padding-top: 2cm;
+    font-size: 2cm;
+    font-family: fantasy;
+    font-weight: 300;
+    color: rgb(79, 163, 184);
+    padding-left: 1cm;
+
+}
+.subtopic{
+    font-size: 0.75cm;
+    padding-left: 1cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    color: rgb(159, 131, 160);
+}
+.audionames{
+    padding-top: 4cm;
+    font-size: 0.75cm;
+    padding-left: 1cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    color: rgb(159, 131, 160);
+    text-align: center;
+    width: 100%;
+}
+.autabeng{
+   background-color: #af4c8e;
+    font-size: 0.5cm;
+    padding-left: 1cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    color: rgb(239, 228, 240);
+    text-align: left;
+    width: 100%;
+}
+.autabsin{
+   background-color: darkgoldenrod;
+    font-size: 0.5cm;
+    padding-left: 1cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    color: rgb(211, 218, 228);
+    text-align: left;
+    width: 100%;
+}
+
+.autabtam{
+    background-color: rgb(184, 38, 147);
+     font-size: 0.5cm;
+     padding-left: 1cm;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 300;
+     color: rgb(211, 218, 228);
+     text-align: left;
+     width: 100%;
+ }
+
