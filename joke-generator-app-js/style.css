@@ -1,0 +1,26 @@
+.main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  background: coral;
+  color: white;
+  padding: 5px;
+}
+.jokes {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+
+}
+.btn {
+  background: coral;
+  color: white;
+}
+@media(max-width: 468px) {
+  h2 {
+    font-size: 20px;
+  }
+}
