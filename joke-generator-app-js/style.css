@@ -1,23 +1,33 @@
+*{
+  margin:0;
+  padding:0
+}
+
 .main {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-h2 {
+
+h2{
+  font-family: 'Arimo', sans-serif;
   text-align: center;
   background: coral;
-  color: white;
+  color: #5bccec;
   padding: 5px;
 }
+
 .jokes {
   width: 80%;
   margin: auto;
   padding: 10px;
 
 }
+
 .btn {
+  padding:8px;
   background: coral;
-  color: white;
+  color:#26f7df;
 }
 @media(max-width: 468px) {
   h2 {
