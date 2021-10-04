@@ -1,0 +1,3 @@
+D:/std/data str/SnapTube Video/coding/recursion/sorting/cmake-build-debug/CMakeFiles/sorting.dir
+D:/std/data str/SnapTube Video/coding/recursion/sorting/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/std/data str/SnapTube Video/coding/recursion/sorting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
