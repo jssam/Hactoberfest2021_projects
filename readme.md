@@ -53,6 +53,7 @@ It can be any of any length and can be any number of scripts, just **add a folde
 - ritvik singh
 - rahul das
 - alen kuriakose
+- Kaushik Chatterjee
 
 ##Hactoberfest
 <b>What is Hacktoberfest?</b>
