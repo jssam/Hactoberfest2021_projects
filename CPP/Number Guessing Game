@@ -1,0 +1,36 @@
+/////////////////////////////////////////////////////////////////////////
+/////////A small C++ program to guess the number at the backend//////////
+/////////////////////////////////////////////////////////////////////////
+
+#include<iostream>
+#include <stdlib.h>
+#include <ctime>
+
+int main()
+{
+	
+    srand(time(0));
+	int x = rand()%10;
+	std::cout<<"Guess a value:";
+	int a,z;
+	char n=n,y=y;
+
+	for(;;)
+	{
+		std::cin>>a; 
+		if(a>x)
+		{
+			std::cout<<"The Number is Smaller:";
+		}
+		if(a<x)
+		{
+			std::cout<<"The Number is Greater:";
+		}
+		if(x == a)
+		{
+			std::cout<<"Congratulations "<<x<<" is the number"<<std::endl ;
+			return 0;
+		}
+	}
+	
+}
