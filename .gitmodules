@@ -1,0 +1,3 @@
+[submodule "notes_app"]
+	path = notes_app
+	url = https://github.com/Adatz/Notes-App.git
