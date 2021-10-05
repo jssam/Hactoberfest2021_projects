@@ -6,23 +6,27 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
+h2{
+    text-align: center;
+}
+
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  margin: auto;
 }
 
 button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 5px auto;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 20%;
 }
 
 button:hover {
@@ -30,7 +34,7 @@ button:hover {
 }
 
 .cancelbtn {
-  width: auto;
+  width: 20%;
   padding: 10px 18px;
   background-color: #f44336;
 }
@@ -45,13 +49,16 @@ img.avatar {
   border-radius: 50%;
 }
 
-.container {
-  padding: 16px;
-}
-
 span.psw {
   float: right;
   padding-top: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -61,7 +68,7 @@ span.psw {
      float: none;
   }
   .cancelbtn {
-     width: 100%;
+     width: 40%;
   }
 }
 </style>
