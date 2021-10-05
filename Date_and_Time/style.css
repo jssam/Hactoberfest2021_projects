@@ -1,0 +1,11 @@
+.container{
+    background-color:coral;
+
+    padding: 100px;
+    margin: 100px;
+    border: black;
+    border-width: 20px;
+    border-style: double;
+    text-align: center;
+    font-size: 100px;
+}
