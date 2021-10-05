@@ -30,9 +30,17 @@ button:hover {
 }
 
 .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
+    
+    width: fit-content;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: large;
   background-color: #f44336;
+}
+
+.cancelbtn:hover{
+    transform: scale(1.05);
 }
 
 .imgcontainer {
@@ -54,6 +62,27 @@ span.psw {
   padding-top: 16px;
 }
 
+.button{
+    margin: auto;
+    text-align: center;
+}
+
+.btn{
+    width: fit-content;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: large;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.header{
+    text-align: center;
+    font-size: large;
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -68,7 +97,9 @@ span.psw {
 </head>
 <body>
 
-<h2>Login Form</h2>
+    <div class="header">
+        <h2>Login Form</h2>
+    </div>
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
@@ -82,14 +113,20 @@ span.psw {
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
-    <button type="submit">Login</button>
+    <div class="button">
+        <button type="submit" class="btn">Login</button>
+    </div>
+    
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+    <div class="button">
+        <button type="button" class="cancelbtn">Cancel</button>
+
+    </div>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
