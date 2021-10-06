@@ -1,0 +1,28 @@
+//C++ program for recursive implementation of Bubble sort
+#include <bits/stdc++.h>
+using namespace std;
+void bubbleSort(int arr[], int n) //Function to implement bubble sort
+{
+	if (n == 1) // Base case
+		return;
+	for (int i=0; i<n-1; i++) // One pass of bubble sort. After this pass, the largest element is moved to end.
+		if (arr[i] > arr[i+1])
+			swap(arr[i], arr[i+1]);
+	bubbleSort(arr, n-1); //largest element is fixed
+}
+//Function to print an array 
+void printArray(int arr[], int n)
+{
+	for (int i=0; i < n; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
+}
+int main()
+{
+	int arr[] = {64, 34, 25, 12, 22, 11, 90};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	bubbleSort(arr, n);
+	printf("Sorted array : \n");
+	printArray(arr, n);
+	return 0;
+}
