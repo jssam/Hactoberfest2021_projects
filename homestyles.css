@@ -1,0 +1,169 @@
+* {
+  transition-timing-function: cubic-bezier(0.64, 0.57, 0.67, .57);
+  transition-duration: .1s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  padding-right: 5vw;
+  font-family: 'Pacifico', cursive;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.postsdiv {
+  height: 75vh;
+  width: 250px;
+}
+
+.posttitle {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: black;
+  margin-top: 15px;
+}
+
+.postbody {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: darkgray;
+  margin-bottom: 5px;
+}
+
+li div {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 12px;
+}
+
+.submitbtn {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkgray;
+  border-style: none;
+  background-color: transparent;
+  font-family: 'Luckiest Guy', cursive;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submitbtn:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-style: none;
+  background-color: transparent;
+  font-family: 'Luckiest Guy', cursive;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.postwrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  border-bottom-color: darkgray;
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+}
+
+h4 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-height: 100vh;
+  max-width: 90vw;
+}
+
+.bodywrapper {
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 50px;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: column nowrap;
+}
+
+.navbar {
+  margin-left: 20px;
+  margin-top: 15vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  font-family: 'Luckiest Guy', cursive;
+  color: darkgray;
+}
+
+label {
+  font-family: 'Pacifico', cursive;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+li {
+  min-width: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  color: darkgray;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+span {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-self: flex-end;
+  text-align: right;
+  padding-top: 8px;
+  margin: 8px 10px 5px 10px;
+}
+
+span:hover {
+  margin: 0vw 2vw 0vw 0vw;
+  color: black;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: -3vh;
+  display: flex;
+  margin-left: 2vw;
+  align-self: flex-start;
+  margin-left: 2vw;
+  font-family: 'Pacifico', cursive;
+}
+
+label {
+  font-family: sans-serif;
+}
