@@ -29,7 +29,7 @@ function AddItem(p) {
           placeholder="Title..."
           value={item}
           onChange={(e) => setItem(e.target.value)}
-          onKeyPress={this.listenForEnter}
+          onKeyPress={(e) => listenForEnter}
         />
         <button className="addBtn" onClick={taskAdded}>
           Add
