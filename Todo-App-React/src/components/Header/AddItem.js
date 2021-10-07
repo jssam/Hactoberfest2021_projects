@@ -4,7 +4,7 @@ function AddItem(p) {
   const [item, setItem] = useState("");
   const { takeItem } = p;
   
-  // see this post https://stackoverflow.com/a/31273404
+  // see this post for my solution https://stackoverflow.com/a/31273404
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
       taskAdded()
