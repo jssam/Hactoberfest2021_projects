@@ -3,13 +3,14 @@ import { useState } from "react";
 function AddItem(p) {
   const [item, setItem] = useState("");
   const { takeItem } = p;
-
-  function listenForEnter(e) {
-    if (e.key === "Enter") {
-      taskAdded();
+  
+  // see this post https://stackoverflow.com/a/31273404
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      taskAdded()
     }
   }
-
+  
   const taskAdded = () => {
     if (item.length > 1) {
       takeItem(item);
@@ -29,7 +30,7 @@ function AddItem(p) {
           placeholder="Title..."
           value={item}
           onChange={(e) => setItem(e.target.value)}
-          onKeyPress={(e) => listenForEnter}
+          onKeyDown={handleKeyDown}
         />
         <button className="addBtn" onClick={taskAdded}>
           Add
