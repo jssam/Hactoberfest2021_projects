@@ -25,7 +25,7 @@ function AddItem(p) {
   <h2 style={{margin:"5px"}} >My To Do List</h2>
   <form onSubmit={submit}>
   <input type="text" id="myInput" placeholder="Title..." value={item} onChange = {(e) => setItem(e.target.value)}  />
-  <input type="submit" className="addBtn" onClick={taskAdded}>Add</input>
+  <button type="submit" className="addBtn" onClick={taskAdded}>Add</button>
   </form>
 </div>
 
