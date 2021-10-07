@@ -15,7 +15,7 @@ function AddItem(p) {
       takeItem(item);
       setItem("");
     } else {
-      alert("Must Enter Something");
+      alert("Please enter your todo");
     }
   };
 
