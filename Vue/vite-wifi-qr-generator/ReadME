@@ -1,0 +1,21 @@
+# Vite WiFI QR Generator
+
+A QR code generator done using vite, tailwind and vue3. With this app you can generate a QR code based on your wifi credentials and you can scan it later in order to connect easily.
+
+## Instalation
+
+```
+npm install
+```
+
+## Run project
+
+```
+npm run dev
+```
+
+## Build project
+
+```
+npm run build
+```
