@@ -1,13 +1,22 @@
+
 from pytube import YouTube
 
-link=input('Enter the link of video which you wants to download')
+link=input('[?] Enter the link of video which you wants to download>  ')
+try:
+	yt=YouTube(link)
+except KeyboardInterrupt:
+	print("[!] Script stopped by user.. ")
+except:
+	print("[!] Failed to get streams. please make sure that you entered valid URL or your internet connection is ok.")
+	exit()
 
-yt=YouTube(link)
+try:
+	ys=yt.streams.get_highest_resolution()
+except KeyboardInterrupt:
+	print("[!] Script stopped by user.. ")
 
-ys=yt.streams.get_highest_resolution()
-
-print("Downloading")
+print(f"[*] Downloading \'{yt.title}\'")
 
 ys.download()
 
-print("Download Completed")
+print("[*] Download Completed.")
