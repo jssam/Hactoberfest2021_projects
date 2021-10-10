@@ -2,7 +2,7 @@
 
 With this program one can login, create or remove an account or change its
 
-password. It stores your data in its online database.
+password. It stores your data in its cloud database.
 
 ---------------| IMPORTANT |-----------------
 
