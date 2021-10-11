@@ -11,6 +11,8 @@ list = [1, 2, 'apple', 4,'Grapes', 6]
 
 # Driver Code
 n = 'Grapes'
+#take input from user
+#n=input()
 
 if search(list, n):
 	print("Found")
