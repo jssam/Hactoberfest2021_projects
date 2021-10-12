@@ -1,5 +1,5 @@
 //Script to update google sheets using golang
-// Data is pulled from a SQL DB and pushed over to the google sheet
+// Data is pulled from a SQL DB and pushed over to the google sheet.
 package main
 
 import (
