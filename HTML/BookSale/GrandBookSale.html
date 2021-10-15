@@ -21,14 +21,14 @@
         }
     </style>
     <script>
-        function displayfun()
+        function displayFun()
         {
-            var n=document.getElementById("bookval").value;
+            var n=document.getElementById("bookVal").value;
             var bookType=document.getElementsByName("bookCategory");
             var d;
             var sub;
             var amount;
-            var perbookprice;
+            var perBookPrice;
             for(var i=0;i<bookType.length;i++)
             {
             if(bookType[i].checked)    
@@ -38,26 +38,26 @@
             }
             if(sub == "Science")
             {
-               perbookprice=400;
+               perBookPrice=400;
                if(n<=250)
                {
-                   amount=perbookprice*0.95*n;
+                   amount=perBookPrice*0.95*n;
                }
                else if(n>250)
                {
-                  amount=perbookprice*0.93*n;
+                  amount=perBookPrice*0.93*n;
                }
             }
             else if(sub=="Comics")
             {
-               perbookprice=300;
+               perBookPrice=300;
                 if(n<=250)
                 {
-                  amount=perbookprice*0.97*n;
+                  amount=perBookPrice*0.97*n;
                 }
                 else if(n>250)
                 {
-                   amount=perbookprice*0.96*n;
+                   amount=perBookPrice*0.96*n;
                 }
             }
           
@@ -68,7 +68,7 @@
     </script>
     <body>
         <h1>E-BOOK GRAND SALE</h1>
-        <form onsubmit="return displayfun()">
+        <form onsubmit="return displayFun()">
             <table>
                 <tr>
                     <td>Customer Name</td>
@@ -80,7 +80,7 @@
                 </tr>-->
                 <tr>
                     <td>Mobile Number</td>
-                    <td><input type="tel" name="customerMobileNumber" placeholder="Enter the Mobile Number" pattern="[8-9]{1}[0-9]{9}" required></td>
+                    <td><input type="tel" name="customerMobileNumber" placeholder="Enter the Mobile Number" pattern="[1-9]{1}[0-9]{9}" required></td>
                 </tr>
                 <tr>
                     <td>
@@ -104,11 +104,11 @@
                 </tr>
                 <tr>
                     <td>No of Books Required</td>
-                    <td><input type="range" name="bookCount" required id="bookval" min="1" max="500" value=1 oninput="markOutputId.value=bookval.value">
+                    <td><input type="range" name="bookCount" required id="bookVal" min="1" max="500" value=1 oninput="markOutputId.value=bookVal.value">
                     <output name="markOutputName" id="markOutputId"></output></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name="submit" value="Calculate Total Price" onclick="displayfun()"></td>
+                    <td><input type="submit" name="submit" value="Calculate Total Price" onclick="displayFun()"></td>
                     <td><input type="reset" name="reset" value="Reset"></td>
                 </tr>
                 <tr>
