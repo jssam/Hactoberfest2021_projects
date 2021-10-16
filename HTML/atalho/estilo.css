@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: cursive;
+}
+
+h1 {
+	background-color: #33d;
+	color: #fff;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px;
+	justify-content: center;
+}
+
+img {
+	width: 200px;
+	height: 150px;
+	border-radius: 7px;
+	margin: 10px;
+}
+
+img:hover {
+	border: 5px solid aquamarine;
+	padding: 2px;
+	opacity: .5;
+}
+
+footer {
+	border-top: 1px solid black;
+	margin: 20px;
+}
