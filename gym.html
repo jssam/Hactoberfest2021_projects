@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supa gym</title>
+</head>
+<link rel="stylesheet" href="project@html/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Baloo Bhai 2', cursive;
+        color:cornsilk;
+        margin: o px;
+        padding: o px;
+        background: url('img/bg1.jpg');
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left{
+        font-family: 'Baloo Bhai 2', cursive;
+        display: inline-block;
+        /* border: 2px solid red;  */
+        position: absolute;
+        left:0px;
+        top:1px;
+        margin: 42px;
+        text-align: center;
+        font-family: ;
+    }
+    .left img{
+        width: 87px;
+
+    }
+    .center{
+        background-color: rgb(87, 77, 77);
+        display:block ;
+        width:48%;
+        margin: 43px auto;
+        /* border: 2px solid blue;  */
+    }
+    .right{
+        font-family: 'Baloo Bhai 2', cursive;
+        position: absolute;
+        right: 34px;
+        top:21px;
+        display: inline-block;
+        margin: 43px;
+       
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-size: 25px;
+    }
+    .navbar li a:hover ,.navbar li a.active{
+        text-decoration: underline;
+        color: yellow;
+    }
+    .btn{
+        background-color: black;
+        margin: 0px 9px;
+        color: white;
+        padding:4px 14px;
+        border: 2px sollid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: tomato;
+    }
+    .container{
+        /* border: 2px solid tomato; */
+        margin: 32px 126px ;
+        padding: 12px 12px;
+        width: 33%;
+        border-radius: 23px;
+        text-align: center;
+       
+    }
+    .formclass input{
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 25px;
+        text-align: center;
+        display:block ;
+        width: 68%;
+        margin: 7px auto;
+        padding: 12px;
+        background-color: chartreuse;
+
+    }
+
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+       <img src="img/logo.jpg.jpg" alt=""> 
+       <div>SUPER GYM </div>
+
+        </div>
+        <!-- center for navigation -->
+        <div class="center">
+            
+
+            <ul class="navbar">
+                <li><a href="#" class="active">home </a></li>
+                <li><a href="#">about us </a></li>
+                <li><a href="#">fitness calculator </a> </li>
+                <li><a href="#">contact us </a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">call us </button>
+            <button class="btn">email us </button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE GYM</h1>
+        <form action="noaction.php">
+            <div class="formclass">
+                <input type="text" name="" placeholder="enter your Name " >
+            </div>
+            <div class="formclass">
+                <input type="email" name="" placeholder="enter your Email " >
+            </div>
+            <div class="formclass">
+                <input type="number" name="" placeholder="enter your Mob Number " >
+            </div>
+            <div class="formclass">
+                <input type="text" placeholder="enter your prefered timing ">
+            </div>
+            
+            
+        </form>
+            <button class="btn">submit</button>
+</body>
+</html>
