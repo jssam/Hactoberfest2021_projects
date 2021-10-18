@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int dis(int a[],int n)
+    {for(int i=0;i<n;i++)
+        cout<<a[i]<<" ";
+        cout<<"\n";
+
+    }
+
+int t(int a[],int n)
+  { if(n==1)
+      cout<<a[n-1];
+
+      else
+      { dis(a,n);
+
+          int temp[n - 1];
+        for (int i = 0; i < n - 1; i++)
+        {
+            int x = a[i] + a[i + 1];
+            temp[i] = x;
+        }
+
+            return t(temp,n-1);
+
+
+      }
+
+
+
+  }
+
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    t(a,5);
+
+}
