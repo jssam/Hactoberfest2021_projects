@@ -3,6 +3,7 @@
 #include<ctype.h>
 #include<stdlib.h>
 #include<string.h>
+#include<iostream>
 #include<time.h>
 
 int marks[6]={0,0,0,0,0,0},seconds_passed=0,question_number=1,unit_selection_checker[6]={0,0,0,0,0,0};
