@@ -1,0 +1,23 @@
+{
+  "name": "wifi-qr-generator",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-qrcode": "^2.0.0-rc",
+    "qrcode": "^1.4.4",
+    "vue": "^3.2.2",
+    "vue-qrcode-component": "^2.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.3.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7",
+    "vite": "^2.4.4"
+  }
+}
