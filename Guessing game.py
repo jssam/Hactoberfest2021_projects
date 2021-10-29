@@ -1,31 +1,65 @@
 import random
+import sys
 
-print('WELOCOME IN THIS PROGRAM')
+print('WELOCOME IN THIS PROGRAM\n')
+print('GUESS THE NUMBER')
 
-print()
+#function for genarate random numbers according to the levels
+def level(lvl):
+    global randNo
+    if lvl == 'E':
+        randNo = random.randint(1,10)
+        print('Guess a number between 1 & 10..')
 
-print()
+    elif lvl == 'N':
+        randNo = random.randint(1,20)
+        print('Guess a number between 1 & 20..')
+
+    elif lvl == 'H':
+        randNo = random.randint(1,30)
+        print('Guess a number between 1 & 30..')
+
+    else:
+        sys.exit('Invalid Input')
+
+    return randNo 
+
+#function for take the guessed numbers
+def guessNo(randNo):
+    print('.......')
+    print('You have only 3 chances')
+    for i in range(0,3):
+        global guess
+        guess = int(input('Enter your guessed number : '))
+
+        if guess < randNo :
+            print('The number Is Too Low')
+        elif guess > randNo:
+            print('The number Is Too High')
+
+        else:
+           break
+
 
 try:
 
-    a=random.randint(1,10)
+    #get level to generate a randome no
+    print('Select a level')
+    print('(Enter the level first letter)')
+    lvl = input('Easy\t- E\nNormal\t- N\nHard\t- H\n')
 
-    b=int(input('guess no 1 to 10 =  '))
+    randNo = level(lvl)
 
-    print()
+    guessNo(randNo)
 
-    print('your no. is ',b)
-
-    print('my no is ',a)
-
-    if(a==b):
-
-        print('you won')
+    #Checking the input number and random number
+    if guess == randNo:
+        print('Congradulations! You guessed the number')
 
     else:
-
-        print('try again')
+        print('Wrong guess!\nMy number was '+str(randNo))
 
 except (ValueError):
 
     print("Enter a number only")
+
