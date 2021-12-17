@@ -1,4 +1,4 @@
-
+#code for Search from a List
 def search(list,n):
 
 	for i in range(len(list)):
@@ -10,6 +10,7 @@ def search(list,n):
 list = [1, 2, 'apple', 4,'Grapes', 6]
 
 # Driver Code
+
 n = 'Grapes'
 
 if search(list, n):
