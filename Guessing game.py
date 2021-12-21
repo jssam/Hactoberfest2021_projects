@@ -1,6 +1,6 @@
 import random
 
-print('WELOCOME IN THIS PROGRAM')
+print('Welcome in ths program')
 
 print()
 
