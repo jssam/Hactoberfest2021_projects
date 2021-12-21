@@ -6,10 +6,10 @@ print()
 
 print()
 
-try:
-
+try: 
+     #generating a random number between 1 and 10)
     a=random.randint(1,10)
-
+  
     b=int(input('guess no 1 to 10 =  '))
 
     print()
