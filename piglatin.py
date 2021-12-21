@@ -1,11 +1,13 @@
 # convert letter in pig latin with gui
 from tkinter import *
-from tkinter import ttk
+
 # variables
 ay = ‘ay’
 way = ‘way’
 consonant = (‘B’,’C’,’D’,’F’,’G’,’H’,’J’,’K’,’L’,’M’,’N’,’P’,’Q’,’R’,’S’,’T’,’Y’,’V’,’X’,’Z’)
+low_consonants = (x.lower() for x in consonant)
 vowel = (‘A’,’E’,’I’,’O’,’U’)
+low_vowel = (x.lower() for x in vowel
 # creates Tkinter window
 root = Tk()
 # creates window title
@@ -28,14 +30,14 @@ user_sentence = str(user_sentence)
 words = user_sentence.split()
 for user_word in words:
 first_letter = user_word[0]
-first_letter = str(first_letter)
-first_letter=first_letter.upper()
-if first_letter in consonant:
+
+if (first_letter in consonant) or (first_letter in low_consonants):
 length_of_word = len(user_word)
 remove_first_letter = user_word[1:length_of_word]
 pig_latin=remove_first_letter+first_letter+ay
 pig_latin_string=pig_latin_string+’ ‘+pig_latin
-elif first_letter in vowel:
+            
+elif (first_letter in vowel) or (first_letter in low_vowel):
 pig_latin=user_word+way
 pig_latin_string=pig_latin_string+’ ‘+pig_latin
 else:
